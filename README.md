@@ -42,6 +42,8 @@ click Mulai button
 
 And wait until timer reload 
 
+For check reaction just Login facebook from browser and go to all activity Facebook Page
+
 Forked from :
 https://github.com/tomiashari/fb-autoreaction
 
