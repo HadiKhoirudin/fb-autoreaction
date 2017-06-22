@@ -6,15 +6,15 @@ AUTO REACTION FACEBOOK WITH XAMPP
 
 Just open with XAMPP apache server on localhost
 
-> You must connect with internet
+You must connect with internet
 
-> Login facebook with your Email / Phone
+Login facebook with your Email / Phone
 
-> Generate Token Acces from here https://goo.gl/SYKZOg
+Generate Token Acces from here https://goo.gl/SYKZOg
 
-> Set Maximal status
+Set Maximal status
 
-> Set timer in millisecond 
+Set timer in millisecond 
 
 If millisecond converted to Minutes they are :
 
@@ -38,7 +38,11 @@ If millisecond converted to Minutes they are :
 
 10 Minutes
 
+click Mulai button
+
+And wait until timer reload 
 
 Forked from :
 https://github.com/tomiashari/fb-autoreaction
-& Modified by HadiKhoirudin
+
+And Modified by HadiKhoirudin
