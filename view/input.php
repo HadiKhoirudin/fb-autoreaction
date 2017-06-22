@@ -2,7 +2,6 @@
 require('/../assets/layout_form.css'); // untuk tampilan form
 $data_tanggal = date("Y-m-d");
 $val_form = '';
-
     	if(isset($_POST['submit'])) {
 			session_start();
 			$val_form = 'hidden="hidden"';
