@@ -65,8 +65,13 @@ class Reaction
 
 	public function send_reaction($user, $pass, $token, $r_male, $r_female, $max_status)
 	{
+		$arrContextOptions=array(
+		"ssl"=>array(
+						"verify_peer"=>false,
+						"verify_peer_name"=>false,),
+		);  
 		$get_post	= 'https://graph.facebook.com/me/home?fields=id,from&limit='.$max_status.'&access_token='.$token;
-		$get_post 	= file_get_contents($get_post);
+		$get_post 	= file_get_contents($get_post, false, stream_context_create($arrContextOptions));
 		$get_post 	= json_decode($get_post, true);
 		
 		foreach($get_post['data'] as $data)
@@ -80,7 +85,7 @@ class Reaction
 			$html 		= str_replace('&amp;','&',$html);
 			
 			$gen_url 	= 'https://graph.facebook.com/'.$post_id[0].'?access_token='.$token;
-			$gen_data	= file_get_contents($gen_url);
+			$gen_data	= file_get_contents($gen_url, false, stream_context_create($arrContextOptions));
 			$gen_data 	= json_decode($gen_data, true);
 			$gender 	= $gen_data['gender'];
 			
